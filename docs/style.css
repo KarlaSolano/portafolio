@@ -32,6 +32,12 @@ h2 {
     font-size: 4.2rem;
 }
 
+@media (max-width: 425px) {
+    html {
+      font-size: 60%;
+    }
+}
+
 /*Nav*/
 #navbar{
     display: flex;
