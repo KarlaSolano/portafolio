@@ -18,3 +18,14 @@ body{
     line-height: 1.4;
     color: var(--main-white);
 }
+
+/*Nav*/
+#navbar{
+    display: flex;
+    position: fixed;  
+    justify-content: flex-end;
+    background: var(--main-red);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    width: 100%;
+}
