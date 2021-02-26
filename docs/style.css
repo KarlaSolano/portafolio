@@ -223,39 +223,3 @@ footer > p {
     font-size: 1rem;
     margin: 1rem;
 }
-
-/*@media*/
-
-@media(max-width: 460px){
-
-    .h2,h3 {
-        font-size: 3rem;
-    }
-
-    #navbar{
-        justify-content: center;
-    }
-
-    .nav-list {
-        margin: 0 1rem;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    #projects{
-        padding: 0;
-    }
-
-    footer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #contact{
-        padding: 0;
-        text-align: center;
-    }
-
-}
