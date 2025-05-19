@@ -10,51 +10,12 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Karla Solano</title>
-
-    <style>
-        /*@media*/
-
-        @media(max-width: 460px) {
-
-            .h2,
-            h3 {
-                font-size: 3rem;
-            }
-
-            #navbar {
-                justify-content: center;
-            }
-
-            .nav-list {
-                margin: 0 1rem;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-
-            #projects {
-                padding: 0;
-            }
-
-            footer {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            #contact {
-                padding: 0;
-                text-align: center;
-            }
-
-        }
-    </style>
 </head>
 <body>
     <nav id="navbar" class="navbar">
         <ul class="nav-list">
             <li>
-                <a href="#welcome-section">ACERCA</a>
+                <a href="#welcome-section">INICIO</a>
             </li>
             <li>
                 <a href="#projects">PROYECTOS</a>
@@ -71,7 +32,7 @@
         <div class="wrap-description">
             <p>¡Hola, yo soy!</p>
             <h1>Karla Solano,</h1>
-            <p>- Desarrolladora Full Stack</p>
+            <p>- Desarrolladora Fullstack</p>
 
             <a class="acerca" href="https://www.linkedin.com/in/karla-solano-rangel/" target="_blanck">Más sobre mí ...</a>
         </div>
@@ -157,7 +118,60 @@
             <i class="fas fa-chevron-right"></i>
         </a>
     </section>
-    
+    <section id="skills">
+        <div class="skills-section">
+            <div class="project-tile">
+                <h3>Skills</h3>
+            </div>
+            <div class="skills-links">
+                <div class="logo">
+                    <img src="img/php.png" alt="icono php">
+                </div>
+                <div class="logo">
+                    <img src="img/laravel.png" alt="icono laravel">
+                </div>
+                <div class="logo">
+                    <img src="img/cake.png" alt="icono cakephp">
+                </div>
+                <div class="logo">
+                    <img src="img/react.png" alt="icono react">
+                </div>                
+            </div>
+            <div class="skills-links">
+                <div class="logo">
+                    <img src="img/html.png" alt="icono html">
+                </div>
+                <div class="logo">
+                    <img src="img/css.png" alt="icono css">
+                </div>
+                <div class="logo">
+                    <img src="img/javascript.png" alt="icono jsvascript">
+                </div>                
+            </div>
+            <div class="skills-links">
+                <div class="logo">
+                    <img src="img/bootstrap.png" alt="icono bootstrap">
+                </div>
+                <div class="logo">
+                    <img src="img/git.png" alt="icono git">
+                </div>              
+                <div class="logo">
+                    <img src="img/github.png" alt="icono github">
+                </div>              
+            </div>
+            <div class="skills-links">
+                <div class="logo">
+                    <img src="img/mysql.png" alt="icono mysql">
+                </div>
+                <div class="logo">
+                    <img src="img/postgresql.png" alt="icono postgresql">
+                </div>      
+                <div class="logo">
+                    <img src="img/postman.png" alt="icono postman">
+                </div>          
+            </div>
+        </div>
+    </section>  
     <section id="contact" class="contact-section">
         <div class="contact-section-header">
             <h3>Contacto</h3>
@@ -172,17 +186,14 @@
             <a class="btn contact-details" href="https://twitter.com/" target="_blank">
                 <i class="fab fa-twitter"></i>Twitter
             </a>
-            <a class="btn contact-details" href="tel:555-555-555">
-                <i class="fas fa-mobile-alt"></i>Teléfono
+            <a class="btn contact-details" href="mailto:karla-solano@outlook.com">
+                <i class="fas fa-envelope"></i>Correo
             </a>
         </div>
     </section>
     <footer>
         <p>
-            Karla Solano . Portafolio 
-        </p>
-        <p>
-            © 2025
+            ©2025 hecho con <i class="fa fa-heart" aria-hidden="true"></i> por Karla Solano
         </p>
     </footer>
 </body>
