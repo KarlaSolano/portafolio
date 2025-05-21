@@ -516,11 +516,14 @@ a{
 }
 
 .contact-details{
-    text-shadow: 2px 2px 1px #1f1f1f;
-    transition: transform 0.3s ease-out;
+    background: #222;
+    color: #fff;
+    border: none;
 }
 
 .contact-details:hover {
+    background: #444;
+    color: var(--main-acentos);
     transform: translateY(8px);
 }
 
