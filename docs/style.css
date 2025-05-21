@@ -225,22 +225,6 @@ a{
     margin-left: 0;
 }
 
-.acerca:hover, .acerca:focus {
-    background: var(--main-secundario);
-    color: var(--main-fondo);
-    transform: translateY(-3px) scale(1.04);
-    box-shadow: 0 4px 18px var(--main-primario);
-}
-
-.acerca i {
-    font-size: 1.1em;
-    transition: transform 0.2s;
-}
-
-.acerca:hover i {
-    transform: translateX(4px);
-}
-
 .acerca::after {
     display: none;
 }
@@ -516,9 +500,10 @@ a{
 }
 
 .contact-details{
-    background: #222;
-    color: #fff;
-    border: none;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(184,181,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(46, 46, 46, 0.18);
 }
 
 .contact-details:hover {
@@ -532,7 +517,17 @@ a{
     padding: 1rem 2rem;
     border-radius: 2px;
     margin-bottom: 10px;
+    transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 2px 12px rgba(184,181,255,0.13);
 }
+
+.btn:hover, .acerca:hover {
+    background: linear-gradient(90deg, var(--main-primario), var(--main-secundario));
+    color: var(--main-fondo);
+    transform: scale(1.06) translateY(-2px);
+    box-shadow: 0 8px 32px var(--main-primario);
+}
+
 .fab, .fas{
     padding-right: 5px;
 }
