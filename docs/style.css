@@ -38,11 +38,6 @@ a{
     color: var(--main-principal);
 }
 
-img {
-    display: block;
-    width: 100%;
-}
-
 /*Nav*/
 #navbar{
     display: flex;
@@ -443,7 +438,7 @@ img {
     margin-left: 10px;
 }
 
-/* Tecnologías section */
+/* Skills */
 #skills{
     display: flex;
     flex-direction: column;
@@ -451,21 +446,49 @@ img {
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 100vh;
+    min-height: 60vh;
     background: var(--main-acentos);
     color: var(--main-fondo);
+    padding: 40px 0;
 }
+
+.skills-section {
+    width: 90%;
+    max-width: 1100px;
+}
+
 .skills-links{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
+    gap: 32px 48px;
+    margin-top: 32px;
 }
+
 .logo{
-    max-width: 7%;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.08);
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 18px;
 }
+
+.logo:hover {
+    transform: translateY(-8px) scale(1.08);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    background: rgba(255,255,255,0.18);
+}
+
+.logo img {
+    max-width: 56px;
+    max-height: 56px;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.10));
+    transition: filter 0.2s;
+}
+
 /* Contact section */
 #contact{
     display: flex;
@@ -579,6 +602,13 @@ footer > p {
     .projects-grid-modern {
         grid-template-columns: 1fr;
         padding: 0 1rem;
+    }
+    .skills-links {
+        gap: 18px 12px;
+    }
+    .logo img {
+        max-width: 38px;
+        max-height: 38px;
     }
 }
 
